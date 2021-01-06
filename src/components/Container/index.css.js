@@ -17,7 +17,6 @@ export const ContainerWrapperCss = styled.div`
 `;
 
 export const PostWrapperCss = styled.div`
-  //width: 100%;
   border: 1px solid transparent;
   box-shadow: 0px 0px 3px 3px #dddddd;
 `;
@@ -28,6 +27,7 @@ export const ContentTitleCss = styled.h2`
   font-family: "Lato-Bold";
   padding: 0 5% 0 5%;
   margin-bottom: 8%;
+  cursor: pointer;
 `;
 export const ContentSubtitleCss = styled.p`
   font-family: "Lato-Regular";
@@ -73,6 +73,7 @@ export const ImageTextCss = styled.h4`
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  cursor: pointer;
 `;
 
 export const ImageWrapperCss = styled.div`
@@ -92,4 +93,72 @@ export const ImageWrapperCss = styled.div`
       }
   }
   }
+`;
+export const ModalWrapperCss = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+`;
+export const ModalContentCss = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 15px 0;
+  width: 40%;
+  border-radius: 1%;
+  @media (max-width: 750px) {
+    width: 80%;
+  }
+`;
+export const ModalTop = styled.div`
+  width: 100%;
+  svg {
+    float: right;
+    fill: #d3d3d3;
+    width: 4%;
+    height: 4%;
+    padding-right: 3%;
+    cursor: pointer;
+  }
+  margin-bottom: 6.5%;
+`;
+export const ModalImage = styled.div`
+  img {
+    max-height: 300px;
+    width: 100%;
+  }
+`;
+export const ModalText = styled.div``;
+export const ModalFooterCss = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+`;
+export const ModalAvatar = styled.div`
+  img {
+    border-radius: 50%;
+    height: 50px;
+  }
+  margin-right: 3%;
+`;
+export const ModalAuthorCss = styled.p`
+  color: #d3d3d3;
+  margin-top: 14px;
+`;
+export const ModalTitleCss = styled.h2`
+  font-family: "Lato-Bold";
+  padding: 0 5% 0 5%;
+  margin-bottom: 3%;
+`;
+export const ModalSubtitleCss = styled.p`
+  font-family: "Lato-Regular";
+  padding: 0 5% 0 5%;
+  color: #d3d3d3;
+  margin-bottom: 5%;
 `;
