@@ -162,3 +162,13 @@ export const ModalSubtitleCss = styled.p`
   color: #d3d3d3;
   margin-bottom: 5%;
 `;
+export const MissingAvatar = styled.div`
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  margin-right: 3%;
+`;

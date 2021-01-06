@@ -22,6 +22,7 @@ import {
   ModalFooterCss,
   ModalTitleCss,
   ModalSubtitleCss,
+  MissingAvatar,
 } from "./index.css";
 import { ReactComponent as Close } from "./svg/cross-sign.svg";
 const Container = () => {
@@ -91,9 +92,13 @@ const Container = () => {
                   <ModalTitleCss>{postInfo.title}</ModalTitleCss>
                   <ModalSubtitleCss>{postInfo.content}</ModalSubtitleCss>
                   <ModalFooterCss>
-                    <ModalAvatar>
-                      <img src={postInfo.author.avatar} alt="avatar" />
-                    </ModalAvatar>
+                    {postInfo.author.avatar ? (
+                      <ModalAvatar>
+                        <img src={postInfo.author.avatar} alt="avatar" />
+                      </ModalAvatar>
+                    ) : (
+                      <MissingAvatar>?</MissingAvatar>
+                    )}
                     <ModalAuthorCss>
                       {postInfo.author.name} - {postInfo.author.role}
                     </ModalAuthorCss>
