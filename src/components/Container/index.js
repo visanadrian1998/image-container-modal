@@ -40,12 +40,7 @@ const Container = () => {
         return (
           <PostWrapperCss>
             <ImageWrapperCss>
-              <img
-                src={postInfo.thumbnail.small}
-                alt={apiInfo.id}
-                width="600"
-                height="300"
-              />
+              <img src={postInfo.thumbnail.small} alt={apiInfo.id} />
               <ImageTextCss className="imageText">Learn More</ImageTextCss>
             </ImageWrapperCss>
             <ContentWrapperCss>
